@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <mx:WindowedApplication xmlns:mx="http://www.adobe.com/2006/mxml" layout="absolute">
-
-    <mx:ControlBar top="10" right="10" left="10" width="100%">
-        <mx:Button label="&lt;" click="browser.historyBack();"/>
-        <mx:Button label="&gt;" click="browser.historyForward();"/>
-        <mx:TextInput id="loc" text="{browser.location}" width="100%"/>
-        <mx:Button label="Go!" click="browser.location = loc.text"/>
-    </mx:ControlBar>
+	
+	<mx:ControlBar top="10" right="10" left="10" width="100%">
+		<mx:Button label="&lt;" click="browser.historyBack();" />
+		<mx:Button label="&gt;" click="browser.historyForward();" />		
+		<mx:TextInput id="loc" text="{browser.location}" width="100%" />
+		<mx:Button label="Go!" click="browser.location = loc.text" />		
+	</mx:ControlBar>
 
     <mx:HTML id="browser" location="http://www.christianpfeil.com/" bottom="10" top="60" right="10" left="10" width="100%" height="100%" x="10"/>
 
