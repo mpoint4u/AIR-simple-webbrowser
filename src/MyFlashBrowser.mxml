@@ -2,27 +2,27 @@
 <s:WindowedApplication xmlns:fx="http://ns.adobe.com/mxml/2009"
 					   xmlns:s="library://ns.adobe.com/flex/spark"
 					   xmlns:mx="library://ns.adobe.com/flex/mx"
-					   width="800" height="480">
-	
+					   width="800" height="600">	
 	<s:layout>
 		<s:BasicLayout/>
 	</s:layout>
 	
-	<s:Panel x="20" y="20" width="760" height="440">
-
-		
-		
+	<s:Panel left="20" right="20" top="20" bottom="20">
+	
 		<!-- controls for the control bar go here -->
 		<s:controlBarContent>
-				<s:Button label="1st"/>
-				<s:Button label="2nd" />
-				<s:Button label="3rd" />
-				<s:Button label="4th" />						
+				<s:Button label="&lt;" click="browser.historyBack();" />
+				<s:Button label="&gt;" click="browser.historyForward();" />
+				<s:TextInput id="loc" text="{browser.location}" height="25"  width="80%" />
+				<s:Button label="Go!"  click="browser.location = loc.text" />						
 		</s:controlBarContent>
 		
 		<!-- (optional) alter the default layout of the controlbar -->
 		<s:controlBarLayout>
-			<s:HorizontalLayout gap="20" paddingTop="10" paddingBottom="10" />
+			<s:HorizontalLayout gap="20" 
+								paddingTop="10" paddingBottom="10" paddingLeft="10" paddingRight="10" 
+								verticalAlign="justify"								
+								/>
 		</s:controlBarLayout>
 		
 		<!--  content goes here --> 

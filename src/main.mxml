@@ -8,6 +8,7 @@
 		<mx:Button label="Go!" click="browser.location = loc.text" />		
 	</mx:ControlBar>
 
-    <mx:HTML id="browser" location="http://www.christianpfeil.com/" bottom="10" top="60" right="10" left="10" width="100%" height="100%" x="10"/>
+    <mx:HTML id="browser" location="http://www.christianpfeil.com/" 
+			 bottom="10" top="60" right="10" left="10" width="100%" height="100%" x="10"/>
 
 </mx:WindowedApplication>
