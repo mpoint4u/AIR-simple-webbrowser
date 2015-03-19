@@ -1,36 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<s:WindowedApplication xmlns:fx="http://ns.adobe.com/mxml/2009" 
-					   xmlns:s="library://ns.adobe.com/flex/spark" 
-					   xmlns:mx="library://ns.adobe.com/flex/mx">
+<s:WindowedApplication xmlns:fx="http://ns.adobe.com/mxml/2009"
+					   xmlns:s="library://ns.adobe.com/flex/spark"
+					   xmlns:mx="library://ns.adobe.com/flex/mx"
+					   width="800" height="480">
+	
 	<s:layout>
 		<s:BasicLayout/>
 	</s:layout>
 	
-	<s:Panel controlBarVisible="true"
-		left="10" right="10" top="10" bottom="10" backgroundColor="#EEEEEE">
-	
+	<s:Panel x="20" y="20" width="760" height="440">
 
 		
 		
-		<!—content goes here ->
-		
-		<mx:HTML id="browser" location="http://localhost:2000/"  
-				 bottom="10" top="60" right="10" left="10" width="100%" height="100%" x="10"/>		
-		
-		
-		<!—controls for the control bar go here ->
+		<!-- controls for the control bar go here -->
 		<s:controlBarContent>
 				<s:Button label="1st"/>
 				<s:Button label="2nd" />
 				<s:Button label="3rd" />
 				<s:Button label="4th" />						
-
 		</s:controlBarContent>
-		<!— (optional) alter the default layout of the controlbar ->
+		
+		<!-- (optional) alter the default layout of the controlbar -->
 		<s:controlBarLayout>
 			<s:HorizontalLayout gap="20" paddingTop="10" paddingBottom="10" />
 		</s:controlBarLayout>
-	
+		
+		<!--  content goes here --> 
+		
+		<mx:HTML id="browser" location="http://localhost:2000/"  
+				 bottom="10" top="60" right="10" left="10" width="100%" height="100%" x="10"/>	
 		
 	</s:Panel>
 		
