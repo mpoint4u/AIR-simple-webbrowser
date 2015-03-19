@@ -7,7 +7,7 @@
 		<s:BasicLayout/>
 	</s:layout>
 	
-	<s:Panel left="20" right="20" top="20" bottom="20">
+	<s:Panel width="100%" height="100%">
 	
 		<!-- controls for the control bar go here -->
 		<s:controlBarContent>
@@ -27,8 +27,8 @@
 		
 		<!--  content goes here --> 
 		
-		<mx:HTML id="browser" location="http://localhost:2000/"  
-				 bottom="10" top="60" right="10" left="10" width="100%" height="100%" x="10"/>	
+		<mx:HTML id="browser" left="10" right="10" top="10" bottom="10"
+				 location="http://localhost:2000/"/>	
 		
 	</s:Panel>
 		
